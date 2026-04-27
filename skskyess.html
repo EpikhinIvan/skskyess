@@ -3,8 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Для Жанечки 💌</title>
+  <title>Май для Жанечки 💌</title>
   <link rel="stylesheet" href="skskyess.css">
+  <style>
+    .card-img.cinema  { background: linear-gradient(135deg, #fce4ec, #f8bbd0); }
+    .card-img.dinner  { background: linear-gradient(135deg, #e8f5e9, #c8e6c9); }
+    .card-img.home2   { background: linear-gradient(135deg, #fff3e0, #ffe0b2); }
+    .card-img.platform{ background: linear-gradient(135deg, #e8eaf6, #c5cae9); }
+
+    .surprise-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 48px;
+      justify-content: center;
+    }
+    .surprise-chip {
+      background: #fff;
+      border: 1px solid rgba(200,104,122,0.15);
+      border-radius: 50px;
+      padding: 12px 22px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 16px rgba(200,104,122,0.08);
+      font-size: 0.85rem;
+      color: var(--text-mid);
+      transition: transform 0.2s;
+    }
+    .surprise-chip:hover { transform: translateY(-3px); }
+    .surprise-chip .chip-date {
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+    }
+    .surprise-chip-inner { display: flex; flex-direction: column; gap: 2px; }
+  </style>
 </head>
 <body>
 
@@ -12,8 +48,8 @@
 
 <section class="hero">
   <p class="hero-eyebrow">Самой любимой</p>
-  <h1 class="hero-title">Жанечка,</h1>
-  <p class="hero-subtitle">У меня есть три способа провести время вместе</p>
+  <h1 class="hero-title">Жанюшечке</h1>
+  <p class="hero-subtitle">Весь май </p>
   <div class="divider"></div>
   <div class="scroll-hint">
     <span>листай</span>
@@ -23,74 +59,84 @@
 
 <section class="section">
   <div class="section-inner">
+
     <div class="reveal">
-      <p class="section-tag">17 апреля · пятница</p>
-      <h2 class="section-heading">Два варианта</h2>
-      <p class="section-desc">Выбирай что больше по душе, или приходи на оба 🥰</p>
+      <p class="section-tag">Май 2026</p>
+      <h2 class="section-heading">Четыре<br><em>особых вечера</em></h2>
+      <p class="section-desc">Каждую неделю что-то своё. Хочу быть рядом.</p>
     </div>
 
     <div class="cards-grid" style="margin-top:48px">
 
       <div class="card reveal">
-        <div class="card-ribbon">Вариант 1</div>
-        <div class="card-img home">🏠</div>
+        <div class="card-ribbon">1 мая</div>
+        <div class="card-img cinema">🎬</div>
         <div class="card-body">
-          <p class="card-date">17 апреля 2026 · пятница</p>
-          <h3 class="card-title">Уютный день у меня дома</h3>
-          <div class="card-detail"><span class="icon">🕙</span><span>Начало в <strong>11:00</strong></span></div>
-          <div class="card-detail"><span class="icon">📍</span><span>Дома, в тепле и уюте</span></div>
-          <div class="card-detail"><span class="icon">✨</span><span>Смотрим фильмы, только вдвоем ты и я</span></div>
+          <p class="card-date">1 мая 2026 · пятница</p>
+          <h3 class="card-title">Кино</h3>
+          <div class="card-detail"><span class="icon">📍</span><span>Кинотеатр Chaplin Mega</span></div>
+          <div class="card-detail"><span class="icon">✨</span><span>Вдвоем на "Дьявол носит Прада 2"</span></div>
           <div class="card-weather">
-            <span class="weather-icon">🌧️</span>
-            <span>Алматы, 17 апр: ~<strong>+10°C</strong>, дождь возможен (50%) значит, лучше сидеть дома 😊</span>
+            <span class="weather-icon">🌸</span>
+            <span>1 мая лучший повод просто провести день вместе</span>
           </div>
         </div>
       </div>
 
       <div class="card reveal">
-        <div class="card-ribbon">Вариант 2</div>
-        <div class="card-img music">🎵</div>
+        <div class="card-ribbon">9 мая</div>
+        <div class="card-img dinner">🍳</div>
         <div class="card-body">
-          <p class="card-date">17 апреля 2026 · пятница</p>
-          <h3 class="card-title">Вечер на «Платформе»</h3>
-          <div class="card-detail"><span class="icon">🕡</span><span>Начало в <strong>18:30 — 19:00</strong></span></div>
-          <div class="card-detail"><span class="icon">📍</span><span>Платформа, Алматы</span></div>
-          <div class="card-detail"><span class="icon">🎤</span><span>Песни, атмосфера, коктейлчик и мы рядом</span></div>
+          <p class="card-date">9 мая 2026 · суббота</p>
+          <h3 class="card-title">Терринкур</h3>
+          <div class="card-detail"><span class="icon">🥞</span><span>Кушаем, фоткаемся и обнимаееемсяяя</span></div>
+          <div class="card-detail"><span class="icon">✨</span><span>Никуда не торопиться, быть рядом</span></div>
           <div class="card-weather">
-            <span class="weather-icon">🌧️</span>
-            <span>Вечером ещё прохладнее захвати теплую куртку, я ее подержу 🧥</span>
+            <span class="weather-icon">🌿</span>
+            <span>Майские праздники - самое время наслаждаться едой и тобой</span>
           </div>
         </div>
       </div>
 
     </div>
 
-    <div class="or-divider reveal" style="margin-top:48px">
-      <span>и</span>
-    </div>
+    <div class="or-divider reveal" style="margin-top:48px"><span>и ещё</span></div>
 
-    <div class="reveal">
-      <p class="section-tag">19 апреля · воскресенье</p>
-      <h2 class="section-heading">Ещё один<br><em>чудесный день</em></h2>
-    </div>
+    <div class="cards-grid" style="margin-top:32px">
 
-    <div class="cards-grid" style="margin-top:32px; grid-template-columns: 1fr">
-
-      <div class="card reveal" style="max-width:520px; margin:0 auto; width:100%">
-        <div class="card-ribbon gold">Вариант 3</div>
-        <div class="card-img cafe">🍯</div>
+      <div class="card reveal">
+        <div class="card-ribbon">17 мая</div>
+        <div class="card-img home2">🏠</div>
         <div class="card-body">
-          <p class="card-date gold-text">19 апреля 2026 · воскресенье</p>
-          <h3 class="card-title">Медовик</h3>
-          <div class="card-detail"><span class="icon">☕</span><span>Кафе <strong>«Медовик»</strong>, Алматы</span></div>
-          <div class="card-detail"><span class="icon">🍰</span><span>Тёплый чай - самое то в дождливую погоду</span></div>
-          <div class="card-weather gold-weather">
-            <span class="weather-icon">⛅</span>
-            <span>19 апр: переменная облачность, <strong>+14°C</strong> днём отличная погода для прогулки!</span>
+          <p class="card-date">17 мая 2026 · воскресенье</p>
+          <h3 class="card-title">Уютный вечер дома</h3>
+          <div class="card-detail"><span class="icon">🍓</span><span>Ягодки, что-нибудь вкусное и фильм</span></div>
+          <div class="card-detail"><span class="icon">✨</span><span>Никого лишнего - только мы</span></div>
+          <div class="card-weather">
+            <span class="weather-icon">🕯️</span>
+            <span>Лучшее место это то где ты</span>
           </div>
         </div>
       </div>
+
+      <div class="card reveal">
+        <div class="card-ribbon gold">22 мая</div>
+        <div class="card-img platform">🎤</div>
+        <div class="card-body">
+          <p class="card-date gold-text">22 мая 2026 · пятница</p>
+          <h3 class="card-title">Платформа</h3>
+          <div class="card-detail"><span class="icon">🎵</span><span>Конкурс песен, живая атмосфера</span></div>
+          <div class="card-detail"><span class="icon">🍹</span><span>Коктейли и музыка - всё как ты любишь</span></div>
+          <div class="card-weather gold-weather">
+            <span class="weather-icon">✨</span>
+            <span>Вечер, который точно запомнится</span>
+          </div>
+        </div>
+      </div>
+
     </div>
+
+
   </div>
 </section>
 
@@ -100,18 +146,23 @@
   <div class="countdowns-wrapper">
 
     <div class="countdown-block">
-      <p class="countdown-block-label">🏠 Дома · 17 апр, 11:00</p>
+      <p class="countdown-block-label">🎬 Кино · 1 мая</p>
       <div id="cd1" class="countdown-digits"></div>
     </div>
 
     <div class="countdown-block">
-      <p class="countdown-block-label">🎵 Платформа · 17 апр, 18:30</p>
+      <p class="countdown-block-label">🍳 Вкусный вечер · 9 мая</p>
       <div id="cd2" class="countdown-digits"></div>
     </div>
 
     <div class="countdown-block">
-      <p class="countdown-block-label">🍯 Медовик · 19 апр, 14:00</p>
+      <p class="countdown-block-label">🏠 Дома · 17 мая</p>
       <div id="cd3" class="countdown-digits"></div>
+    </div>
+
+    <div class="countdown-block">
+      <p class="countdown-block-label">🎤 Платформа · 22 мая</p>
+      <div id="cd4" class="countdown-digits"></div>
     </div>
 
   </div>
@@ -123,13 +174,13 @@
       «Жанюшка, ты - <span>любовь всей моей жизни.</span><br>
       Хочу проводить с тобой каждый день.»
     </p>
-    <p class="love-sig"> всегда твой писюнчик</p>
+    <p class="love-sig">всегда твой Ваня</p>
     <span class="big-heart">💖</span>
   </div>
 </section>
 
 <footer>
-  Сделано с любовью специально для Жании 
+  Сделано с любовью специально для Жании
 </footer>
 
 <script>
@@ -153,17 +204,14 @@
     const el = document.getElementById(id);
     const now = new Date().getTime();
     const diff = target - now;
-
     if (diff <= 0) {
       el.innerHTML = '<span class="countdown-ended">Уже сегодня! 🎉</span>';
       return;
     }
-
-    const d = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-    const s = Math.floor((diff % (1000 * 60)) / 1000);
-
+    const d = Math.floor(diff / (1000*60*60*24));
+    const h = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+    const m = Math.floor((diff % (1000*60*60)) / (1000*60));
+    const s = Math.floor((diff % (1000*60)) / 1000);
     el.innerHTML = `
       <div class="digit-group"><span class="digit-value">${pad(d)}</span><span class="digit-unit">дней</span></div>
       <span class="digit-sep">:</span>
@@ -175,14 +223,16 @@
     `;
   }
 
-  const t1 = new Date('2026-04-17T11:00:00+05:00').getTime();
-  const t2 = new Date('2026-04-17T18:30:00+05:00').getTime();
-  const t3 = new Date('2026-04-19T14:00:00+05:00').getTime();
+  const t1 = new Date('2026-05-01T18:00:00+05:00').getTime();
+  const t2 = new Date('2026-05-09T17:00:00+05:00').getTime();
+  const t3 = new Date('2026-05-17T15:00:00+05:00').getTime();
+  const t4 = new Date('2026-05-22T19:00:00+05:00').getTime();
 
   function tick() {
     renderCountdown('cd1', t1);
     renderCountdown('cd2', t2);
     renderCountdown('cd3', t3);
+    renderCountdown('cd4', t4);
   }
   tick();
   setInterval(tick, 1000);
